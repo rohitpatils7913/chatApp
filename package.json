@@ -4,6 +4,7 @@
   "description": "chating application",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "nodemon server"
   },
   "author": "",
