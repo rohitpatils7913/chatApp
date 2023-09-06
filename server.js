@@ -1,9 +1,10 @@
 const http = require("http")
 const express =require("express");
 const { connected } = require("process");
+require("dotenv").config()
 const app=express()
 const server =http.createServer(app)
-const port =process.env.Port || 4200;
+const port =process.env.Port ;
 
 app.use(express.static(__dirname+'/public'))
 app.get('/',(req,res)=>{
